@@ -1,29 +1,20 @@
 <template>
-    <header>
-        <p>工作小助手</p>
-        <nav>
-            <ul class="wrapper">
-                <li>首页</li>
-                <li>功能详情</li>
-                <li>代办清单</li>
-                <li>工作进展</li>
-                <li>工作日志</li>
-                <li>开发历程</li>
-            </ul>
-        </nav>
-    </header>
+    <el-menu class="el-menu-demo" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b"
+        mode="horizontal">
+        <el-menu-item index="1">
+            首页
+        </el-menu-item>
+        <el-menu-item index="2">
+            代办清单
+        </el-menu-item>
+        <el-menu-item index="3">
+            工作进展
+        </el-menu-item>
+        <el-menu-item index="4">
+            工作日志
+        </el-menu-item>
+        <el-menu-item index="5">
+            开发历程
+        </el-menu-item>
+    </el-menu>
 </template>
-
-<style scoped>
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px;
-}
-
-.wrapper li {
-    text-align: center;
-    list-style: none;
-    line-height: 100px;
-}
-</style>

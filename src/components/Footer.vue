@@ -5,8 +5,7 @@
 </template>
 
 <style scoped>
-footer {
-    text-align: center;
-    padding: 20px;
-}
+    p {
+        text-align: center;
+    }
 </style>
