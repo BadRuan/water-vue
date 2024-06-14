@@ -1,3 +1,3 @@
 <template>
-    Home Page
+    ToDo Page
 </template>
