@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
-import StoryView from '@/views/StoryView.vue'
+import HomePage from '@/pages/Home.vue'
+import TodoPage from '@/pages/Todo.vue'
+import StoryPage from '@/pages/Story.vue'
 
 
 const router = createRouter({
@@ -9,12 +10,26 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      meta: {
+        title: '首页'
+      },
+      component: HomePage
+    },
+    {
+      path: '/todo',
+      name: 'todo',
+      meta: {
+        title: '代办清单'
+      },
+      component: TodoPage
     },
     {
       path: '/story',
       name: 'story',
-      component: StoryView
+      meta: {
+        title: '开发历程'
+      },
+      component: StoryPage
     }
   ]
 })
