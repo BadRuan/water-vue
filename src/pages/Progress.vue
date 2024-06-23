@@ -1,3 +1,0 @@
-<template>
-    Progress page
-</template>

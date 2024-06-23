@@ -1,3 +1,0 @@
-<template>
-    ToDo Page
-</template>

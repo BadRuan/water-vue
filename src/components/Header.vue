@@ -1,27 +1,30 @@
 <template>
     <el-menu class="el-menu-demo" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b"
         mode="horizontal">
-        <el-menu-item index="1">
-            首页
-        </el-menu-item>
-        <el-menu-item index="2">
-            代办清单
-        </el-menu-item>
-        <el-menu-item index="3">
-            工作进展
-        </el-menu-item>
-        <el-menu-item index="4">
-            工作日志
-        </el-menu-item>
-        <el-menu-item index="5">
-            开发历程
-        </el-menu-item>
+        <RouterLink to="/">
+            <el-menu-item index="1">
+                首页
+            </el-menu-item>
+        </RouterLink>
+        <RouterLink to="/about">
+            <el-menu-item index="2">
+                关于
+            </el-menu-item>
+        </RouterLink>
     </el-menu>
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router'
 
-const route = useRoute()
-console.log(route)
 </script>
+
+<style scoped>
+.router-link,
+.router-link-exact-active,
+.router-link-active {
+  text-decoration: none; /* 移除下划线 */
+  color: inherit; /* 继承父元素的颜色，或直接指定颜色 */
+  background-color: transparent; /* 移除背景色 */
+  /* 添加其他需要重置的样式 */
+}
+</style>

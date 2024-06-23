@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>2024 版权所有</p>
+        <p>Copyright 2024 RuanFumin 版权所有</p>
     </footer>
 </template>
 
