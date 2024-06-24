@@ -11,7 +11,8 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
-    "element-plus": "^2.7.5",
+    "tdesign-icons-vue-next": "^0.2.2",
+    "tdesign-vue-next": "^1.9.6",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

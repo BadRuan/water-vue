@@ -1,11 +1,9 @@
 <template>
-    <footer>
-        <p>Copyright 2024 RuanFumin 版权所有</p>
-    </footer>
+    <t-footer class="footer"> Copyright @ {{ new Date().getFullYear() }} RuanFumin. All Rights Reserved </t-footer>
 </template>
 
 <style scoped>
-    p {
-        text-align: center;
-    }
+.footer {
+    text-align: center;
+}
 </style>
