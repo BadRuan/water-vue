@@ -35,10 +35,10 @@
     <t-divider />
 
     <t-row>
-        <t-col span="3">
+        <t-col span="4">
         </t-col>
 
-        <t-col span="6">
+        <t-col span="4">
             <div class="demo-card">
                 <t-card  class="c1"  title="鸠江区三线水位测站记录情况登记表" header-bordered hover-shadow >
 
@@ -58,7 +58,7 @@
             </div>
         </t-col>
 
-        <t-col span="3">
+        <t-col span="4">
         </t-col>
     </t-row>
 

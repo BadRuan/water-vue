@@ -25,14 +25,18 @@
 const activities = [
     {
         content: '有细化高频次使用需求，等需求明确开发。',
+        datetime: '2024-06-25',
+    },
+    {
+        content: '优化界面设计，更加美观。',
         datetime: '2024-06-24',
     },
     {
-        content: '支持在线获取水位表，解决部分电脑无法运行问题。',
+        content: '调整为在线获取水位表，新增基础界面，解决部分电脑无法运行问题。',
         datetime: '2024-06-23',
     },
     {
-        content: '支持达三线水位自动更改颜色功能',
+        content: '新增达三线水位自动标注对应颜色功能',
         datetime: '2024-05-06',
     },
     {
@@ -40,11 +44,11 @@ const activities = [
         datetime: '2024-05-04',
     },
     {
-        content: '一键生成水位表测试成功',
+        content: '一键生成水位表功能初步测试成功',
         datetime: '2024-05-02',
     },
     {
-        content: '项目构思起步',
+        content: '开始项目初步构思',
         datetime: '2024-04-28',
     },
 ]
@@ -52,7 +56,7 @@ const activities = [
 
 <style>
 .warp {
-    width: 900px;
+    width: 700px;
     margin: 0 auto;
 }
 </style>
