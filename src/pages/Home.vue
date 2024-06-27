@@ -40,9 +40,9 @@
 
         <t-col span="4">
             <div class="demo-card">
-                <t-card  class="c1"  title="鸠江区三线水位测站记录情况登记表" header-bordered hover-shadow >
+                <t-card class="c1" title="鸠江区三线水位测站记录情况登记表" header-bordered hover-shadow>
 
-                    <t-list :split="true" size="large">
+                    <t-list :split="true">
                         <t-list-item>自动填写：当前日期、目标水位</t-list-item>
                         <t-list-item>根据水位高程自动标注对应颜色</t-list-item>
                         <t-list-item>水位范围：今日、昨日、上周同期、去年同期 8:00 水位</t-list-item>

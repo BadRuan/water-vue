@@ -16,3 +16,10 @@ import Footer from '@/components/Footer.vue'
   </t-layout>
 
 </template>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
