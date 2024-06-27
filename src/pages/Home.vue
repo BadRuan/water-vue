@@ -40,21 +40,48 @@
 
         <t-col span="4">
             <div class="demo-card">
-                <t-card class="c1" title="鸠江区三线水位测站记录情况登记表" header-bordered hover-shadow>
-
+                <t-card class="c1" title="鸠江区三线水位测站记录情况登记表1" header-bordered hover-shadow>
                     <t-list :split="true">
-                        <t-list-item>自动填写：当前日期、目标水位</t-list-item>
-                        <t-list-item>根据水位高程自动标注对应颜色</t-list-item>
-                        <t-list-item>水位范围：今日、昨日、上周同期、去年同期 8:00 水位</t-list-item>
+                        <t-list-item>1. 今日 8:00 水位</t-list-item>
+                        <t-list-item>2. 昨日 8:00 水位</t-list-item>
+                        <t-list-item>3. 上周同期 8:00 水位</t-list-item>
+                        <t-list-item>4. 去年同期 8:00 水位</t-list-item>
                     </t-list>
-
                     <template #footer>
                         <t-button href="/api/table" target="_blank">
                             <download-icon />点击下载
                         </t-button>
                     </template>
-
                 </t-card>
+
+                <t-divider />
+
+                <t-card class="c1" title="鸠江区三线水位测站记录情况登记表2" header-bordered hover-shadow>
+                    <t-list :split="true">
+                        <t-list-item>1. 今日 8:00 水位</t-list-item>
+                        <t-list-item>2. 今日 17:00 水位</t-list-item>
+                    </t-list>
+                    <template #footer>
+                        <t-button disabled>
+                            <download-icon />点击下载
+                        </t-button>
+                    </template>
+                </t-card>
+
+                <t-divider />
+
+                <t-card class="c1" title="鸠江区三线水位测站记录情况登记表3" header-bordered hover-shadow>
+                    <t-list :split="true">
+                        <t-list-item>当前时间前8小时整点水位</t-list-item>
+                        <t-list-item>水位发布要求高时使用</t-list-item>
+                    </t-list>
+                    <template #footer>
+                        <t-button disabled>
+                            <download-icon />点击下载
+                        </t-button>
+                    </template>
+                </t-card>
+
             </div>
         </t-col>
 
