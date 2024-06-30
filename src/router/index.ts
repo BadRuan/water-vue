@@ -8,7 +8,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/home',
+      path: '/',
       name: 'home',
       component: HomePage
     },
@@ -21,10 +21,6 @@ const router = createRouter({
       path: '/next',
       name: 'next',
       component: NextPage
-    },
-    {
-      path: '/',
-      redirect: '/home'
     }
   ]
 })

@@ -28,7 +28,7 @@ import { reactive } from 'vue'
 const activities = reactive([
     {
         content: '2小时发布一次水位功能, 增加两个版本, 供选择使用。',
-        datetime: '2024-06-29',
+        datetime: '2024-06-30',
     },
     {
         content: '新增2小时发布一次水位功能。',
