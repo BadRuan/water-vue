@@ -41,7 +41,7 @@
         <t-col span="4">
 
             <div class="demo-card">
-                <t-card class="c1" title="鸠江区三线水位测站记录情况登记表(用于每2小时发布1次)" header-bordered hover-shadow>
+                <t-card class="c1" title="鸠江区三线水位测站记录情况登记表(用于2小时发布1次)" header-bordered hover-shadow>
                     <t-list :split="true">
                         <t-list-item>1. 当前时间对应整点水位</t-list-item>
                         <t-list-item>2. 前2小时整点时刻水位</t-list-item>
@@ -76,14 +76,8 @@
                 </t-card>
             </div>
             
-            
-
 
         </t-col>
-
-        
-            
-        
 
         <t-col span="4">
         </t-col>
