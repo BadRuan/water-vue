@@ -10,9 +10,10 @@
         <t-col span="4">
 
             <t-timeline>
-                <t-timeline-item v-for="(item, index) in activities" :key="index" :label="item.datetime">{{ item.content }}</t-timeline-item>
+                <t-timeline-item v-for="(item, index) in activities" :key="index" :label="item.datetime">{{ item.content
+                    }}</t-timeline-item>
             </t-timeline>
-    
+
         </t-col>
 
         <t-col span="4">
@@ -25,6 +26,10 @@
 import { reactive } from 'vue'
 
 const activities = reactive([
+    {
+        content: '2小时发布一次水位功能, 增加两个版本, 供选择使用。',
+        datetime: '2024-06-29',
+    },
     {
         content: '新增2小时发布一次水位功能。',
         datetime: '2024-06-29',

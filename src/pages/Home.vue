@@ -51,6 +51,22 @@
                         <t-list-item>6. 前10小时整点时刻水位</t-list-item>
                     </t-list>
                     <template #footer>
+                        <t-button href="/api/table3" target="_blank">
+                            <download-icon />点击下载
+                        </t-button>
+                    </template>
+                </t-card>
+            </div>
+
+            <t-divider />
+
+            <div class="demo-card">
+                <t-card class="c1" title="鸠江区三线水位测站记录情况登记表(用于2小时发布1次)" header-bordered hover-shadow>
+                    <t-list :split="true">
+                        <t-list-item>1. 当前时间对应整点水位</t-list-item>
+                        <t-list-item>2. 昨日当前时间对应整点水位</t-list-item>
+                    </t-list>
+                    <template #footer>
                         <t-button href="/api/table2" target="_blank">
                             <download-icon />点击下载
                         </t-button>
@@ -75,7 +91,7 @@
                     </template>
                 </t-card>
             </div>
-            
+
 
         </t-col>
 
