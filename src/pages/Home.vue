@@ -39,12 +39,11 @@
         </t-col>
 
         <t-col span="4">
+
             <Table2 />
+
             <t-divider />
-            <Table3 />
-            <t-divider />
-            <Table4 />
-            <t-divider />
+
             <Table1 />
         </t-col>
 
@@ -57,8 +56,6 @@
 <script setup>
 import Table1 from '@/components/tables/table1.vue'
 import Table2 from '@/components/tables/table2.vue'
-import Table3 from '@/components/tables/table3.vue'
-import Table4 from '@/components/tables/table4.vue'
 </script>
 
 <style>

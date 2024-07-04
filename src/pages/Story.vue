@@ -27,11 +27,15 @@ import { reactive } from 'vue'
 
 const activities = reactive([
     {
-        content: '新增1小时发布一次水位功能, 供选择。',
+        content: '表2 根据时间自动对比昨日/今日8时水位。',
+        datetime: '2024-07-04',
+    },
+    {
+        content: '新增1小时发布一次水位功能。',
         datetime: '2024-06-30',
     },
     {
-        content: '新增2小时发布一次水位功能, 供选择。',
+        content: '新增2小时发布一次水位功能。',
         datetime: '2024-06-29',
     },
     {

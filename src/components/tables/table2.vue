@@ -1,12 +1,12 @@
 <template>
     <div class="demo-card">
-        <t-card class="c1" title="鸠江区三线水位测站记录情况登记表2(每2小时发布)" header-bordered hover-shadow>
+        <t-card class="c1" title="鸠江区三线水位测站记录情况登记表2" header-bordered hover-shadow>
             <t-list :split="true">
                 <t-list-item>1. 当前整点时间对应水位</t-list-item>
-                <t-list-item>2. 前2小时整点时间水位</t-list-item>
-                <t-list-item>3. 昨日 8:00 水位</t-list-item>
-                <t-list-item>4. 当前整点对比昨日 8:00 两比涨落</t-list-item>
-                <t-list-item>5. 两小时内两比涨落</t-list-item>
+                <t-list-item>2. 前 2 小时整点时间水位</t-list-item>
+                <t-list-item>3. 11 点前 昨日 8:00 水位; 11点后今日 8:00 水位</t-list-item>
+                <t-list-item>4. 当前整点对比昨日 8:00 两比 涨/落</t-list-item>
+                <t-list-item>5. 两小时内两比 涨/落</t-list-item>
             </t-list>
             <template #footer>
                 <t-tooltip :content="message">
