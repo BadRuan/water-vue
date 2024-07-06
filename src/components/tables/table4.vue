@@ -11,7 +11,7 @@
             </t-list>
             <template #footer>
                 <t-tooltip :content="message">
-                    <t-button href="/api/table4" target="_blank">
+                    <t-button href="/source/table4" target="_blank">
                         <download-icon />点击下载
                     </t-button>
                 </t-tooltip>
