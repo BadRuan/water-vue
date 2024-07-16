@@ -27,8 +27,12 @@ import { reactive } from 'vue'
 
 const activities = reactive([
     {
+        content: '适应4小时发布一次水位需求。',
+        datetime: '2024-07-16',
+    },
+    {
         content: '表2 2小时前水位列自动隐藏。',
-        datetime: '2024-07-03',
+        datetime: '2024-07-05',
     },
     {
         content: '表2 根据时间自动对比昨日/今日8时水位。',
