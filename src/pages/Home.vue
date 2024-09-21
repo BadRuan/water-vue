@@ -42,10 +42,6 @@
 
             <Table3 />
 
-            <t-divider />
-
-            <Table2 />
-
         </t-col>
 
         <t-col span="4">

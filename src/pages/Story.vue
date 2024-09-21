@@ -27,53 +27,41 @@ import { reactive } from 'vue'
 
 const activities = reactive([
     {
-        content: '适应4小时发布一次水位需求。',
-        datetime: '2024-07-16',
-    },
-    {
-        content: '表2 2小时前水位列自动隐藏。',
-        datetime: '2024-07-05',
-    },
-    {
-        content: '表2 根据时间自动对比昨日/今日8时水位。',
-        datetime: '2024-07-04',
-    },
-    {
-        content: '新增1小时发布一次水位功能。',
-        datetime: '2024-06-30',
-    },
-    {
-        content: '新增2小时发布一次水位功能。',
-        datetime: '2024-06-29',
-    },
-    {
-        content: '优化界面设计，更加美观。',
-        datetime: '2024-06-24',
-    },
-    {
-        content: '新增Web UI界面。',
-        datetime: '2024-06-23',
-    },
-    {
-        content: '调整为在线获取水位表，解决部分电脑无法运行问题。',
-        datetime: '2024-06-23',
-    },
-    {
-        content: '新增达三线水位自动标注对应颜色功能',
-        datetime: '2024-05-06',
-    },
-    {
-        content: '优化项目代码',
-        datetime: '2024-05-04',
-    },
-    {
-        content: '初步测试一键生成水位表功能',
-        datetime: '2024-05-02',
-    },
-    {
         content: '开始项目初步构思',
         datetime: '2024-04-28',
     },
+    {
+        content: '支持一键生成水位表',
+        datetime: '2024-05-02',
+    },
+    {
+        content: '支持三线水位自动标注对应颜色',
+        datetime: '2024-05-06',
+    },
+    {
+        content: '项目变更为Web版本，解决部分电脑客户端无法运行程序问题。',
+        datetime: '2024-06-23',
+    },
+    {
+        content: '更新界面设计，更加美观。',
+        datetime: '2024-06-24',
+    },
+    {
+        content: '支持每2小时、每1小时高频次发布需求。',
+        datetime: '2024-06-29',
+    },
+    {
+        content: '支持根据当前时间自动对比昨日/今日8时水位。',
+        datetime: '2024-07-04',
+    },
+    {
+        content: '支持隐藏不需要显示的数据列。',
+        datetime: '2024-07-05',
+    },
+    {
+        content: '大道至简，仅留使用功能。',
+        datetime: '2024-09-21',
+    }
 ])
 </script>
 
