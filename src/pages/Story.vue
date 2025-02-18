@@ -39,7 +39,7 @@ const activities = reactive([
         datetime: '2024-05-06',
     },
     {
-        content: '项目变更为Web版本，解决部分电脑客户端无法运行程序问题。',
+        content: '项目变更为Web版本, 解决部分电脑客户端无法运行程序问题。',
         datetime: '2024-06-23',
     },
     {
@@ -61,6 +61,14 @@ const activities = reactive([
     {
         content: '大道至简，仅留使用功能。',
         datetime: '2024-09-21',
+    },
+    {
+        content: '针对水信息网站反爬技术迭代，原有爬虫失效情况，重构爬虫，已完成',
+        datetime: '2025-02-16',
+    },
+    {
+        content: '完成Fastapi后端项目重构',
+        datetime: '2025-02-18',
     }
 ])
 </script>

@@ -40,8 +40,9 @@
 
         <t-col span="4">
 
-            <Table3 />
-
+            <Table1 />
+            <br />
+            <Table2 />
         </t-col>
 
         <t-col span="4">
@@ -51,8 +52,8 @@
 </template>
 
 <script setup>
+import Table1 from '@/components/tables/table1.vue'
 import Table2 from '@/components/tables/table2.vue'
-import Table3 from '@/components/tables/table3.vue'
 </script>
 
 <style>
