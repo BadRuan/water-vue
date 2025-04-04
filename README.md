@@ -1,13 +1,5 @@
-# 开发目标：工作小助手
+# 鸠江水位发布小助手
 
-## 技术栈
+前端技术栈：Vue3 + Pinina + Router
 
-- vue3
-- TDesign
-
-## 运行
-
-```shell
-pnpm i
-pnpm run dev
-```
+未使用前端视觉框架
