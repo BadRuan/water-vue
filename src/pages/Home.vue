@@ -1,85 +1,89 @@
+<script setup lang="ts">
+import { storeToRefs } from 'pinia'
+import { useCountStore } from '@/store/count.ts'
+import { useRecentlyStore } from '@/store/recently'
+import { useStoryStore } from '@/store/story'
+
+
+const countStore = useCountStore()
+const { total_count, this_year_count, visits, downloads } = storeToRefs(countStore)
+
+const recentlyStore = useRecentlyStore()
+const { get_recently } = recentlyStore
+
+const storyStore = useStoryStore()
+const { get_story } = storyStore
+
+countStore.loadData()
+get_recently()
+get_story()
+</script>
+
 <template>
-    <h1>鸠江水位小助手</h1>
+    <a-typography-title class="title">鸠江水位发布小助手</a-typography-title>
 
-    <t-divider />
+    <a-divider />
 
-    <div class="tdesign-demo-item--grid">
-        <t-row>
-            <t-col span="3">
-                <div>
-                    <h2>简单</h2>
-                    <p class="c1">使用简单，单击即可</p>
-                </div>
-            </t-col>
-            <t-col span="3">
-                <div>
-                    <h2>准确</h2>
-                    <p class="c1">数据来源可靠（安徽水信息网站）</p>
-                </div>
-            </t-col>
-            <t-col span="3">
-                <div>
-                    <h2>高效</h2>
-                    <p class="c1">立即出表，无需等待</p>
-                </div>
-            </t-col>
-            <t-col span="3">
-                <div>
-                    <h2>便捷</h2>
-                    <p class="c1"> 跨平台，无局限</p>
-                </div>
-            </t-col>
-        </t-row>
-    </div>
+    <a-typography-title class="title2" :level="2">起源</a-typography-title>
+    <a-typography-paragraph class="say">
+        传统水位数据发布依赖人工查询记录，耗时耗力，且数据易摘抄错误，又或者达到相应水位而忘记标注对应颜色情况时有发生，尤其是在防汛夜班期间。
+    </a-typography-paragraph>
 
-    <t-divider />
+    <a-divider />
 
-    <t-row>
-        <t-col span="4">
-        </t-col>
+    <a-typography-title class="title2"  :level="2">诞生</a-typography-title>
+    <a-typography-paragraph class="say">
+        「鸠江水位小助手」应防汛值班工作需求而生，以<a-typography-text mark>自动水位数据提取</a-typography-text>+<a-typography-text
+            mark>自动表格生成</a-typography-text>为核心，优化水位发布流程，助力实现​“鸠江区防汛水位报表秒级输出”​的效率飞跃。
+    </a-typography-paragraph>
+    <a-typography-paragraph class="say">
+        让防汛值班工作人员得到<a-typography-text strong>更好</a-typography-text>的用户体验。
+    </a-typography-paragraph>
 
-        <t-col span="4">
+    <a-divider />
 
-            <Table1 />
-            <br />
-            <Table2 />
-        </t-col>
+    <a-typography-title class="title2"  :level="2">意义</a-typography-title>
+    <a-typography-paragraph class="say">
+        2024年明显提升鸠江区水务局防汛值班水位发布响应<a-typography-text mark>效率</a-typography-text>。
+    </a-typography-paragraph>
 
-        <t-col span="4">
-        </t-col>
-    </t-row>
+    <a-divider />
+
+    <a-typography-title class="title2"  :level="2">特点</a-typography-title>
+    <a-typography-paragraph class="say">
+        「鸠江水位小助手平台」以​“<a-typography-text strong>精准、可靠</a-typography-text>”​为核心，让每个水位数据价值极致释放。
+    </a-typography-paragraph>
+
+    <a-divider>站点数据</a-divider>
+
+    <a-row>
+        <a-col :span="6">
+            <a-statistic title="现有水位数据" :value="total_count" style="margin-right: 50px" />
+        </a-col>
+        <a-col :span="6">
+            <a-statistic title="今年水位数据" :value="this_year_count" />
+        </a-col>
+        <a-col :span="6">
+            <a-statistic title="站点访问数" :value="visits" />
+        </a-col>
+        <a-col :span="6">
+            <a-statistic title="水位表下载数" :value="downloads" />
+        </a-col>
+    </a-row>
 
 </template>
 
-<script setup>
-import Table1 from '@/components/tables/table1.vue'
-import Table2 from '@/components/tables/table2.vue'
-</script>
-
-<style>
-h1 {
+<style scoped>
+.title {
     text-align: center;
+    margin: 40px 0;
+}
+.title2{
+    margin-left: 16px;
 }
 
-h2 {
-    text-align: center;
+.say {
+    margin: 30px 0;
 }
 
-.c1 {
-    text-align: center;
-}
-
-.mb-4 {
-    margin: 0 auto;
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-}
-
-.t-button {
-    min-width: 320px;
-    max-width: 640px;
-}
 </style>

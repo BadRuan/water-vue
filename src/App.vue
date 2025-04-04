@@ -1,25 +1,24 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 
 </script>
 
 <template>
-  <t-layout>
-    <Header />
-    <t-content>
-      <RouterView />
-    </t-content>
-    <t-divider />
+  <Header />
+  <a-layout class="layout">
+    <a-layout-content style="padding: 0 50px">
+      <div class="content">
+        <RouterView />
+      </div>
+    </a-layout-content>
     <Footer />
-  </t-layout>
-
+  </a-layout>
 </template>
 
-<style>
-body {
-  margin: 0;
-  padding: 0;
+<style scoped>
+.content {
+  width: 1440px;
+  margin: auto;
 }
 </style>

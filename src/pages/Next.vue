@@ -1,26 +1,4 @@
-<template>
-    <h1>下步计划(暂列)</h1>
-
-    <t-divider />
-
-    <t-row>
-        <t-col span="4">
-        </t-col>
-
-        <t-col span="4">
-            <t-list :split="true" size="large" v-for="(item, index) in plans" :key="index">
-                <t-list-item>{{ item }}</t-list-item>
-            </t-list>
-        </t-col>
-
-        <t-col span="4">
-        </t-col>
-    </t-row>
-
-
-</template>
-
-<script setup>
+<script setup lang="ts">
 import { reactive } from 'vue'
 
 const plans = reactive([
@@ -28,6 +6,30 @@ const plans = reactive([
     "2、 数据总览: 总及每年度水位条目数、各水文站点条目数等",
     "3、 功能优化: 点击下载表格后服务端的表格需要自动删除",
     "4、 功能优化: 根据按钮状态判断是否有水位数据",
-    "开发视个人时间和精力安排"
 ])
 </script>
+
+<template>
+    <a-typography-title class="title">
+        下步计划
+    </a-typography-title>
+
+    <a-list size="large" bordered :data-source="plans">
+        <template #renderItem="{ item }">
+            <a-list-item>{{ item }}</a-list-item>
+        </template>
+        <template #header>
+            <div>开发想法构思</div>
+        </template>
+        <template #footer>
+            <div>具体开发视个人时间和精力安排</div>
+        </template>
+    </a-list>
+</template>
+
+<style scoped>
+.title {
+    text-align: center;
+    margin: 40px 0;
+}
+</style>
