@@ -37,7 +37,7 @@ const { count } = useCountStore()
 .content1 {
     width: 1440px;
     height: 800px;
-    background-image: url("@/assets/bgimg.svg");
+    background-image: url("@/assets/bgimg.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }

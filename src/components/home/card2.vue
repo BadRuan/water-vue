@@ -58,6 +58,14 @@
     align-items: center;
     justify-content: space-around;
     padding: 0 120px;
+    transition: all 0.2s;
+}
+
+.card-item:hover {
+    box-shadow: 2px 2px 4px rgb(1, 1, 1);
+    transition: background-color 1s;
+    transition: width 2px;
+    width: 1020px;
 }
 
 .part1 {
