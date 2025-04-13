@@ -8,12 +8,15 @@
             <div class="line"></div>
             <div class="description">
                 <p>24h自动实时提取安徽省水信息网站防汛站点水位数据。</p>
-                <p>满足鸠江区所需<span class="sp1">芜湖</span>、<span class="sp1">凤凰颈闸下</span>、<span class="sp1">裕溪闸下</span>、<span class="sp1">裕溪闸上</span>、<span class="sp1">清水</span>、<span class="sp1">新桥闸上</span>共<span class="sp1">6</span>个水文站点数据。</p>
+                <p>满足鸠江区所需<span class="sp1">芜湖</span>、<span class="sp1">凤凰颈闸下</span>、<span class="sp1">裕溪闸下</span>、<span
+                        class="sp1">裕溪闸上</span>、<span class="sp1">清水</span>、<span class="sp1">新桥闸上</span>共<span
+                        class="sp1">6</span>个水文站点数据。</p>
             </div>
         </div>
         <div class="card-item">
             <div class="description">
-                <p>按要求在水位表中准确填好水位数据，并能根据测站水位数据自动对比<span class="sfsw">设防水位</span>、<span class="jjsw">警戒水位</span>、<span class="bzsw">保证水位</span>线标注好颜色。</p>
+                <p>按要求在水位表中准确填好水位数据，并能根据测站水位数据自动对比<span class="sfsw">设防水位</span>、<span class="jjsw">警戒水位</span>、<span
+                        class="bzsw">保证水位</span>线标注好颜色。</p>
                 <p>根据防汛需要有多种水位表下载，完美满足防汛需要。</p>
             </div>
             <div class="line"></div>
@@ -47,9 +50,9 @@
 .card-item {
     margin: auto;
     width: 1000px;
-    height: 400px;
+    height: 300px;
     background: #fff;
-    border-radius: 16px;
+    border-radius: 8px;
     box-shadow: 1px 1px 2px black;
     display: flex;
     align-items: center;

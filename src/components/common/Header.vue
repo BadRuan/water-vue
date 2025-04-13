@@ -65,6 +65,6 @@ nav li a {
 }
 
 nav li:hover a {
-    color: blue;
+    color: rgb(128, 128, 251);
 }
 </style>
