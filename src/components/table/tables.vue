@@ -11,7 +11,7 @@
                 <li>5、 今日昨日8:00 水位对比</li>
             </ul>
             <div class="line"></div>
-            <a href="/table/1" target="_blank"  class="down"><img src="@/assets/icon/down-icon.svg">下载水位表</a>
+            <a href="/table/1" target="_blank" class="down"><img src="@/assets/icon/down-icon.svg">下载水位表</a>
         </div>
         <div class="card">
             <h2>三线水位记录情况登记表</h2>
@@ -22,18 +22,19 @@
                 <li>3、 8小时前整点时间对应水位</li>
             </ul>
             <div class="line"></div>
-            <a href="/table/2" target="_blank"  class="down"><img src="@/assets/icon/down-icon.svg">下载水位表</a>
+            <a href="/table/2" target="_blank" class="down"><img src="@/assets/icon/down-icon.svg">下载水位表</a>
         </div>
         <div class="card">
             <h2>三线水位记录情况登记表</h2>
             <div class="line"></div>
             <ul>
-                <li>1、 当前整点时间对应水位</li>
-                <li>2、 4小时前整点时间对应水位</li>
-                <li>3、 8小时前整点时间对应水位</li>
+                <li>1、 今日 8:00 水位</li>
+                <li>2、 三日前 8:00 水位</li>
+                <li>3、 两比水位差值</li>
+                <li>4、 去年同期 8:00 水位</li>
             </ul>
             <div class="line"></div>
-            <a href="/table/2" target="_blank"  class="down"><img src="@/assets/icon/down-icon.svg">下载水位表</a>
+            <a href="/table/3" target="_blank" class="down"><img src="@/assets/icon/down-icon.svg">下载水位表</a>
         </div>
     </div>
 </template>
