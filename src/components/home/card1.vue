@@ -37,7 +37,7 @@ const { count } = useCountStore()
 .content1 {
     width: 1440px;
     height: 800px;
-    background-image: url("@/assets/bgimg.webp");
+    background-image: url("https://a1.boltp.com/2025/04/27/680e090488ee3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
