@@ -11,3 +11,8 @@ export interface CountInter {
     visits:number
     downloads:number
 }
+
+export interface HistoryInter {
+    event_time: string
+    content: string
+}

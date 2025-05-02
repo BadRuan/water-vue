@@ -12,6 +12,11 @@ export const routes = [
         path: '/table',
         name: 'table',
         component: Table
+    },
+    {
+        path: '/history',
+        name: 'history',
+        component: () => import('./pages/History.vue')
     }
 ]
 

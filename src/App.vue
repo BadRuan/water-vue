@@ -4,7 +4,7 @@ import Footer from '@/components/common/Footer.vue'
 </script>
 
 <template>
-    <div class="outcontainer">
+    <div class="wrap">
         <Header />
         <div class="container">
             <RouterView />
@@ -13,13 +13,20 @@ import Footer from '@/components/common/Footer.vue'
     </div>
 </template>
 
-<style scoped>
-.outcontainer {
-    background-color: #F7F7F7;
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.wrap {
+    background-color: #F6F7FF;
+}
+
 .container {
     margin: auto;
     width: 1440px;
-    background-color: #F7F7F7;
+    background-color: #F6F7FF;
 }
 </style>

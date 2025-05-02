@@ -9,8 +9,9 @@
                 <li><img class="icon" src="@/assets/icon/nav/table-icon.svg">
                     <RouterLink to="/table">水位表</RouterLink>
                 </li>
-                <li><img class="icon" src="@/assets/icon/nav/story-icon.svg"><a href="#">开发历程</a></li>
-                <li><img class="icon" src="@/assets/icon/nav/next-icon.svg"><a href="#">下步计划</a></li>
+                <li><img class="icon" src="@/assets/icon/nav/story-icon.svg">
+                    <RouterLink to="/history">开发历程</RouterLink>
+                </li>
             </nav>
         </div>
     </div>

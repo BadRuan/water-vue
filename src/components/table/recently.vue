@@ -9,90 +9,120 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="box">
+    <div class="box1">
+        <h2>Recently</h2>
+        <h1>最新水位</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="box2">
         <div class="grid_box">
             <div class="block" v-for="item in recently_data" :key="item.stcd">
+                <img src="@/assets/icon/location-icon.svg">
                 <span class="s_name">{{ item.name }}</span>
+                <img src="@/assets/icon/water-icon.svg">
                 <span class="s_current">{{ item.current }}</span>
                 <span class="unit">m</span>
-                <p class="r_time">更新时间：{{ item.tm }} </p>
+                <img src="@/assets/icon/date-icon.svg">
+                <span class="r_time">更新时间：{{ item.tm }} </span>
             </div>
         </div>
-        <div class="line"></div>
-        <a href="#" @click="get_recently()" class="update"><img src="@/assets/icon/update-icon.svg">更新水位</a>
+        <div class="button">
+            <a href="#" @click="get_recently()" class="update">
+                <img src="@/assets/icon/update-icon.svg">更新水位</a>
+        </div>
+
     </div>
 </template>
 
 <style scoped>
-.box {
-    margin: 20px auto;
-    padding: 40px;
-    width: 1200px;
-    border-radius: 16px;
-    background-color: #fff;
-    box-shadow: 2px 2px 2px rgb(178, 178, 178);
+.box1 {
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-bottom: 40px;
 }
 
-.grid_box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    row-gap: 20px;
+.box1 h1 {
+    font-size: 28px;
+
+}
+
+.box1 h2 {
+    font-size: 20px;
+    color: #383838;
+}
+
+.line {
+    width: 60px;
+    height: 8px;
+    border-bottom: 2px solid #2A82E4;
 }
 
 .block {
-    width: 300px;
-    margin: 0;
-    padding: 0;
+    margin: 0 340px;
+    padding-left: 20px;
+    border-bottom: solid 1px #A6A6A6;
+}
+
+.block img {
+    margin-right: 8px;
+}
+
+.block span {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
 }
 
 .s_name {
-    font-size: 36px;
+    padding: 0 12px;
+    width: 160px;
+    margin-right: 40px;
 }
 
 .s_current {
     padding: 0 12px;
-    font-size: 20px;
-    color: #2A82E4;
+    width: 60px;
 }
 
 .unit {
-    font-size: 20px;
+    padding-right: 12px;
+    margin-right: 30px;
 }
 
 .r_time {
-    margin: 0;
-    padding-top: 8px;
-    font-size: 20px;
-    border-top: 1px solid black;
+    padding: 0 12px;
 }
 
-.line {
-    margin: 40px auto;
-    width: 1120px;
-    border: 0.5px solid rgb(132, 132, 132);
+.block:hover {
+    background-color: #E9ECFE;
+    color: #3B3EFF;
 }
 
-.update {
-    display: block;
-    width: 140px;
+.button {
+    width: 160px;
     height: 40px;
-    margin: auto;
-    padding: 0;
-    padding-right: 10px;
+    margin: 20px auto;
+}
+
+.box2 a {
+    display: inline-block;
     font-size: 16px;
-    text-align: center;
     line-height: 40px;
     background-color: #1077FB;
     color: #fff;
-    border-radius: 12px;
+    padding: 0 24px;
+    border-radius: 4px;
 }
 
-img {
-    padding: 0 8px;
+.box2 a:hover {
+    background-color: #4696ff;
 }
 
-.update:hover {
-    background-color: #63A6FC;
+.box2 a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
 }
 </style>
