@@ -40,6 +40,7 @@ onMounted(() => {
     margin-top: 60px;
     margin-left: 20px;
     margin-bottom: 40px;
+    animation: move 1s;
 }
 
 .box1 h1 {

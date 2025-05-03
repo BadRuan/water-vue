@@ -29,4 +29,14 @@ import Footer from '@/components/common/Footer.vue'
     width: 1440px;
     background-color: #F6F7FF;
 }
+
+@keyframes move {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 20px;
+    }
+}
 </style>
