@@ -1,4 +1,9 @@
 <template>
+    <div class="box">
+        <div class="t1">功能 特点</div>
+        <div class="t2">效率为本，科技向善</div>
+    </div>
+
     <div class="card">
         <div class="card-item">
             <div class="part1">
@@ -39,79 +44,100 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.box {
+    margin: auto;
+    margin: 40px 0;
+
+    .t1 {
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 48px;
+        margin: 20px 0;
+    }
+
+    .t2 {
+        margin: auto;
+        text-align: center;
+        font-style: italic;
+        font-size: 36px;
+        color: #808080;
+    }
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin: 60px auto;
-}
-
-.card-item {
     margin: auto;
-    width: 1000px;
-    height: 300px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px black;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 120px;
-    transition: width 400ms;
-}
 
-.card-item:hover {
-    box-shadow: 2px 2px 4px rgb(1, 1, 1);
-    width: 1020px;
-}
+    .card-item {
+        margin: 20px auto;
+        width: 1000px;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 120px;
+        background-color: rgb(246, 246, 247);
+        border-bottom: .5px solid rgb(213, 213, 213);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 
-.part1 {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
+        .part1 {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
 
-.num {
-    color: #2A82E4;
-    font-size: 60px;
-    font-weight: bold;
-}
+            .num {
+                margin-left: 100px;
+                color: #2A82E4;
+                font-size: 60px;
+                font-weight: bold;
+            }
 
-.overview {
-    font-size: 40px;
-}
+            .overview {
+                font-size: 40px;
+            }
+        }
 
-.line {
-    height: 180px;
-    border: 0.5px solid #2A82E4;
-}
+        .line {
+            height: 180px;
+            width: .5px;
+            background-color: #2A82E4;
+            transform: rotate(9deg);
+        }
 
-.description {
-    width: 500px;
-}
+        .description {
+            width: 500px;
 
-.description p {
-    text-indent: 48px;
-    font-size: 24px;
-}
+            p {
+                text-indent: 48px;
+                font-size: 24px;
+                font-family: 'Douyin Sans';
 
-.sp1 {
-    color: #2A82E4;
-    font-weight: bold;
-}
 
-.sfsw {
-    color: blue;
-}
 
-.jjsw {
-    color: blue;
-    font-weight: bold;
-}
+                .sp1 {
+                    color: #2A82E4;
+                    font-weight: bold;
+                }
 
-.bzsw {
-    color: red;
-    font-weight: bold;
+                .sfsw {
+                    color: blue;
+                }
+
+                .jjsw {
+                    color: blue;
+                    font-weight: bold;
+                }
+
+                .bzsw {
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
 }
 </style>

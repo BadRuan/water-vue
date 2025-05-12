@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import type { HistoryInter } from '@/model'
+import Mark from '@/components/common/Mark.vue';
+import type { HistoryInter } from '@/model';
 
 const history_2024: HistoryInter[] = [
     {
@@ -72,12 +73,12 @@ const history_2025: HistoryInter[] = [
 </script>
 
 <template>
-    <div class="box1">
-        <h2>History</h2>
-        <h1>开发历程</h1>
-        <div class="line"></div>
-    </div>
-    <div class="box2">
+    <Mark>
+        <template #first>开发历程</template>
+        <template #second>History</template>
+    </Mark>
+
+    <div class="box">
         <div class="year">
             <div class="year-item">2024</div>
             <img src="@/assets/icon/circle-icon.svg">
@@ -101,78 +102,60 @@ const history_2025: HistoryInter[] = [
     </div>
 </template>
 
-<style lang="css" scoped>
-.box1 {
-    margin-top: 60px;
-    margin-left: 20px;
-    margin-bottom: 60px;
-    animation: move 1s;
-}
-
-.box1 h1 {
-    font-size: 28px;
-
-}
-
-.box1 h2 {
-    font-size: 20px;
-    color: #383838;
-}
-
-.line {
-    width: 60px;
-    height: 8px;
-    border-bottom: 2px solid #2A82E4;
-}
-
-.box2 {
+<style lang="scss" scoped>
+.box {
     margin: 20px 60px;
-}
 
-.year,
-.item {
-    display: flex;
-    align-items: center;
-}
+    .year {
+        margin: 20px 0 0 0;
+    }
 
-.year-item {
-    width: 100px;
-    font-size: 24px;
-    line-height: 40px;
-    font-weight: bold;
-    text-align: center;
-}
+    .year,
+    .item {
+        display: flex;
+        align-items: center;
 
-.year img {
-    width: 20px;
-    height: 20px;
-    line-height: 16px;
-}
 
-.date {
-    width: 110px;
-    padding: 0 10px;
-    font-size: 18px;
-    line-height: 40px;
-    text-align: center;
-}
+        .date {
+            width: 110px;
+            padding: 0 10px;
+            font-size: 18px;
+            line-height: 40px;
+            text-align: center;
+        }
 
-.item p {
-    padding: 0 40px;
-    line-height: 40px;
-    border-left: 2px dashed #3071F2;
-    font-size: 20px;
-    width: 1200px;
-}
+        p {
+            padding: 0 40px;
+            line-height: 40px;
+            border-left: 2px dashed #3071F2;
+            font-size: 20px;
+            width: 1200px;
+        }
 
-.item:hover .date {
-    background-color: #E9ECFE;
-    color: #3B3EFF;
-}
+        &:hover .date {
+            background-color: #E9ECFE;
+            color: #3B3EFF;
+        }
 
-.item:hover p {
-    border-left: 2px solid #3071F2;
-    background-color: #E9ECFE;
-    color: #3B3EFF;
+        &:hover p {
+            border-left: 2px solid #3071F2;
+            background-color: #E9ECFE;
+            color: #3B3EFF;
+        }
+    }
+
+    .year-item {
+        width: 100px;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .year img {
+        width: 20px;
+        height: 20px;
+        line-height: 16px;
+    }
 }
 </style>

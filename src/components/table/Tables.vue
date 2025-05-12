@@ -1,10 +1,4 @@
 <template>
-    <div class="box1">
-        <h2>Tables</h2>
-        <h1>水位表</h1>
-        <div class="line"></div>
-    </div>
-
     <div class="table">
         <div class="card">
             <h2>三线水位记录登记表</h2>
@@ -40,88 +34,76 @@
     </div>
 </template>
 
-<style scoped>
-.box1 {
-    margin-top: 60px;
-    margin-left: 20px;
-    margin-bottom: 40px;
-    animation: move 1s;
-}
-
-.box1 h1 {
-    font-size: 28px;
-
-}
-
-.box1 h2 {
-    font-size: 20px;
-    color: #383838;
-}
-
-.line {
-    width: 60px;
-    height: 8px;
-    border-bottom: 2px solid #2A82E4;
-}
+<style lang="scss" scoped>
+$card-width: 300px;
+$card-height: 48px;
 
 .table {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
 
-.card {
-    padding-top: 5px;
-    background-color: #ffffff;
-    width: 300px;
-    height: 300px;
-    box-shadow: 4px 4px 6px #a6a6a6;
-}
+    .card {
+        padding-top: 36px;
+        background-color: #fff;
+        width: $card-width;
+        height: 360px;
+        border-radius: 4px;
+        transition: transform .5s;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 
-.card:hover {
-    background-color: #E9ECFE;
-    color: #3B3EFF;
-}
+        h2 {
+            text-align: center;
+            width: $card-width;
+            height: $card-height;
+            font-size: 1.5em;
+            border-bottom: solid 1px #a3a3a3;
+        }
 
-.card h2 {
-    text-align: center;
-    width: 276px;
-    height: 40px;
-    font-size: 20px;
-    line-height: 40px;
-    border-bottom: solid 1px #3B3EFF;
-}
+        ul {
+            margin-left: 20px;
+            padding: 20px 0px;
+            width: 220px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style-type: none;
+            font-family: 'Douyin Sans';
+            color: #5c5c5c;
+        }
 
-.card ul {
-    margin-left: 20px;
-    padding: 20px 0;
-    width: 220px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+        a {
+            margin-left: 68px;
+            display: inline-block;
+            width: 160px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 40px;
+            background-color: #1077FB;
+            color: #fff;
+            padding: 0 24px;
+            border-radius: 4px;
+            text-decoration: none;
 
-.card a {
-    margin-left: 68px;
-    display: inline-block;
-    width: 160px;
-    height: 40px;
-    font-size: 16px;
-    line-height: 40px;
-    background-color: #1077FB;
-    color: #fff;
-    padding: 0 24px;
-    border-radius: 4px;
-}
+            img {
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+            }
 
-.card a:hover {
-    background-color: #4696ff;
-}
+            &:hover {
+                background-color: #4696ff;
+            }
+        }
 
-.card a img {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
+        &:hover {
+            transform: translate(0px, -4px);
+            box-shadow: 4px 4px 6px #a6a6a6;
+        }
+
+    }
+
+
 }
 </style>

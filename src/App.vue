@@ -13,7 +13,7 @@ import Footer from '@/components/common/Footer.vue'
     </div>
 </template>
 
-<style>
+<style lang="scss">
 * {
     margin: 0;
     padding: 0;
@@ -21,22 +21,12 @@ import Footer from '@/components/common/Footer.vue'
 }
 
 .wrap {
-    background-color: #F6F7FF;
+    background-color: #fff;
 }
 
 .container {
     margin: auto;
-    width: 1440px;
-    background-color: #F6F7FF;
-}
-
-@keyframes move {
-    0% {
-        margin-left: 0;
-    }
-
-    100% {
-        margin-left: 20px;
-    }
+    width: $content-width;
+    background-color: #fff;
 }
 </style>
