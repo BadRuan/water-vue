@@ -13,20 +13,14 @@ import Footer from '@/components/common/Footer.vue'
     </div>
 </template>
 
-<style lang="scss">
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+<style lang="scss" scoped>
 .wrap {
     background-color: #fff;
-}
 
-.container {
-    margin: auto;
-    width: $content-width;
-    background-color: #fff;
+    .container {
+        margin: auto;
+        width: $content-width;
+        background-color: #fff;
+    }
 }
 </style>

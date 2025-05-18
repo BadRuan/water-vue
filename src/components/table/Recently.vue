@@ -32,7 +32,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .box {
     .grid_box .block {
-        margin: 0 320px;
+        margin: 0 340px;
         padding-left: 20px;
         border-bottom: solid 1px #A6A6A6;
         font-family: 'Xiaohe Simplify Sans VF';
@@ -40,7 +40,7 @@ onMounted(() => {
 
         .s_name {
             padding: 0 12px;
-            width: 160px;
+            width: 140px;
             margin-right: 40px;
         }
 
@@ -55,7 +55,7 @@ onMounted(() => {
         }
 
         .r_time {
-            padding: 0 12px;
+            padding: 0 6px;
         }
 
         img {

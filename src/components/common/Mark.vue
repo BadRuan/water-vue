@@ -15,11 +15,18 @@ $left-width: 40px;
 $line-width: 64px;
 
 .content {
-    margin: 0 $left-width;
-    padding: 40px 0;
+    margin: 20px $left-width;
+    padding: 0;
     animation: move 1s;
 
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
     h2 {
+        margin: 0;
+        padding: 0;
         font-size: 1em;
         color: #383838;
     }

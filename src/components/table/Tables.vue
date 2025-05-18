@@ -14,7 +14,7 @@
         <div class="card">
             <h2>三线水位记录登记表</h2>
             <ul>
-                <li>1、 当前整点时间对应水位</li>
+                <li>1、 当前整点对应水位</li>
                 <li>2、 4小时前整点时间对应水位</li>
                 <li>3、 8小时前整点时间对应水位</li>
             </ul>
@@ -47,7 +47,7 @@ $card-height: 48px;
         padding-top: 36px;
         background-color: #fff;
         width: $card-width;
-        height: 360px;
+        height: 320px;
         border-radius: 4px;
         transition: transform .5s;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@ $card-height: 48px;
             margin-left: 20px;
             padding: 20px 0px;
             width: 220px;
-            height: 200px;
+            height: 160px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
