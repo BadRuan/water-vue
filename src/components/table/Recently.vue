@@ -71,7 +71,7 @@ onMounted(() => {
 
         &:hover {
             background-color: #E9ECFE;
-            color: #3B3EFF;
+            color: rgb(108, 108, 108);
         }
     }
 

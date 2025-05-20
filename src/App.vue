@@ -4,23 +4,7 @@ import Footer from '@/components/common/Footer.vue'
 </script>
 
 <template>
-    <div class="wrap">
-        <Header />
-        <div class="container">
-            <RouterView />
-            <Footer />
-        </div>
-    </div>
+    <Header />
+    <RouterView />
+    <Footer />
 </template>
-
-<style lang="scss" scoped>
-.wrap {
-    background-color: #fff;
-
-    .container {
-        margin: auto;
-        width: $content-width;
-        background-color: #fff;
-    }
-}
-</style>

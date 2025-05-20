@@ -1,6 +1,7 @@
 <template>
     <div class="table">
         <div class="card">
+
             <h2>三线水位记录登记表</h2>
             <ul>
                 <li>1、 今日 8:00 水位</li>
@@ -45,19 +46,25 @@ $card-height: 48px;
 
     .card {
         padding-top: 36px;
-        background-color: #fff;
+        background-image: linear-gradient(to top, rgb(237, 246, 255), rgb(255, 255, 255));
         width: $card-width;
         height: 320px;
-        border-radius: 4px;
+        border-radius: 8px;
         transition: transform .5s;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 
         h2 {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+
             text-align: center;
             width: $card-width;
             height: $card-height;
-            font-size: 1.5em;
-            border-bottom: solid 1px #a3a3a3;
+            font-size: 1.6em;
+
+            border-bottom: dashed 1px #dedede;
         }
 
         ul {
@@ -65,12 +72,12 @@ $card-height: 48px;
             padding: 20px 0px;
             width: 220px;
             height: 160px;
+            color: rgb(93, 93, 93);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             list-style-type: none;
             font-family: 'Douyin Sans';
-            color: #5c5c5c;
         }
 
         a {

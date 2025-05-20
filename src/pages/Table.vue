@@ -6,24 +6,33 @@ import recently from '@/components/table/Recently.vue';
 </script>
 
 <template>
-    <Mark>
-        <template #first>使用提示</template>
-        <template #second>Prompt</template>
-    </Mark>
+    <div class="contain">
+        <Mark>
+            <template #first>使用提示</template>
+            <template #second>Prompt</template>
+        </Mark>
 
-    <Prompt />
+        <Prompt />
 
-    <Mark>
-        <template #first>水位表</template>
-        <template #second>Tables</template>
-    </Mark>
+        <Mark>
+            <template #first>水位表</template>
+            <template #second>Tables</template>
+        </Mark>
 
-    <Tables />
+        <Tables />
 
-    <Mark>
-        <template #first>最新水位</template>
-        <template #second>Recently</template>
-    </Mark>
+        <Mark>
+            <template #first>最新水位</template>
+            <template #second>Recently</template>
+        </Mark>
 
-    <recently />
+        <recently />
+    </div>
 </template>
+
+<style lang="scss" scoped>
+.contain {
+    margin: 0 auto;
+    width: $content-width;
+}
+</style>

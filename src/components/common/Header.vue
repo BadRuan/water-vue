@@ -19,10 +19,18 @@
 
 <style lang="scss" scoped>
 $header-width: 1200px;
-$header-height: 80px;
+$header-height: 60px;
+$menu-text-color: rgb(26, 30, 35);
+$hover-bg-color: rgb(246, 247, 248);
 
 .contain {
-    background-color: #000000;
+    background-color: #fff;
+    border: 1px solid #a7a7a7;
+    box-shadow: 0 0 2px 1px rgb(132, 132, 132);
+    margin: 0;
+    padding: 0;
+    // top: 0;
+    // position: sticky;
 
     .header {
         margin: auto;
@@ -32,26 +40,34 @@ $header-height: 80px;
         justify-content: space-between;
         align-items: center;
 
+        .logo {
+            margin-top: 10px;
+            height: $header-height;
+        }
+
         nav {
             display: flex;
-            justify-content: center;
             gap: 16px;
 
             li {
-                height: 32px;
-                line-height: 32px;
-                color: #FFF;
+                height: 40px;
+                line-height: 40px;
+                color: $menu-text-color;
                 list-style: none;
                 font-size: 1.2em;
                 text-align: center;
-                border-radius: 4px;
+                border-radius: 12px;
                 padding: 0px 20px;
+                border: .5px solid #fff;
 
+                &:hover {
+                    background-color: $hover-bg-color;
+                    border: .5px solid #a7a7a7;
+                }
 
                 a {
-                    color: #FFF;
+                    color: $menu-text-color;
                     text-decoration: none;
-                    font-family: 'Douyin Sans';
                 }
             }
         }
