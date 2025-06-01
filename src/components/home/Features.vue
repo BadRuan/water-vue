@@ -1,7 +1,7 @@
 <template>
     <div class="box">
         <div class="t1">功能 特点</div>
-        <div class="t2">效率为本，科技向善</div>
+        <div class="t2">效率为本，稳定第一</div>
     </div>
 
     <div class="card">
@@ -47,13 +47,14 @@
 <style lang="scss" scoped>
 .box {
     margin: auto;
-    margin: 40px 0;
+    padding: 40px 0;
+    background-color: $bgcolor;
 
     .t1 {
         margin: auto;
         text-align: center;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 28px;
         margin: 20px 0;
     }
 
@@ -61,12 +62,13 @@
         margin: auto;
         text-align: center;
         font-style: italic;
-        font-size: 36px;
+        font-size: 20px;
         color: #808080;
     }
 }
 
 .card {
+    background-color: $bgcolor;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -79,7 +81,7 @@
         align-items: center;
         justify-content: space-around;
         padding: 0 120px;
-        background-color: rgb(246, 246, 247);
+        background-color: #fff;
         border-bottom: .5px solid rgb(213, 213, 213);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 

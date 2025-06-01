@@ -18,19 +18,19 @@
 </template>
 
 <style lang="scss" scoped>
-$header-width: 1200px;
+$header-width: $content-width;
 $header-height: 60px;
 $menu-text-color: rgb(26, 30, 35);
 $hover-bg-color: rgb(246, 247, 248);
+$background-color: #E5E5E5;
 
 .contain {
-    background-color: #fff;
-    border: 1px solid #a7a7a7;
-    box-shadow: 0 0 2px 1px rgb(132, 132, 132);
+    background-color: $background-color;
+    box-shadow: 0 0 2px 2px rgb(170, 170, 170);
     margin: 0;
     padding: 0;
-    // top: 0;
-    // position: sticky;
+    top: 0;
+    position: sticky;
 
     .header {
         margin: auto;
@@ -50,24 +50,28 @@ $hover-bg-color: rgb(246, 247, 248);
             gap: 16px;
 
             li {
-                height: 40px;
-                line-height: 40px;
+                height: $header-height;
+                line-height: $header-height;
                 color: $menu-text-color;
                 list-style: none;
                 font-size: 1.2em;
                 text-align: center;
-                border-radius: 12px;
                 padding: 0px 20px;
-                border: .5px solid #fff;
-
-                &:hover {
-                    background-color: $hover-bg-color;
-                    border: .5px solid #a7a7a7;
-                }
+                border-bottom: 2px solid $background-color;
+                transition: all 1s;
 
                 a {
                     color: $menu-text-color;
                     text-decoration: none;
+                    transition: all 1s;
+                }
+
+                &:hover {
+                    border-bottom: 4px solid $pcolor;
+
+                    a {
+                        color: $pcolor;
+                    }
                 }
             }
         }

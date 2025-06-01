@@ -1,13 +1,6 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
-import DataOverivew from '@/components/home/DataOverivew.vue';
+import DataOverivew from '@/components/home/Overivew.vue';
 import Features from '@/components/home/Features.vue';
-import { useCountStore } from '@/store/count.ts';
-const { loadData } = useCountStore()
-
-onMounted(() => {
-    loadData()
-})
 </script>
 
 <template>
