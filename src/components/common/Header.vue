@@ -10,7 +10,7 @@
                     <RouterLink to="/table">水位表</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/history">开发历程</RouterLink>
+                    <RouterLink to="/history">更新日志</RouterLink>
                 </li>
             </nav>
         </div>

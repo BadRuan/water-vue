@@ -11,7 +11,7 @@ div {
     background-color: $pcolor;
     text-align: center;
     border-radius: 2px;
-    width: 160px;
+    width: 140px;
 
     span {
         display: inline;

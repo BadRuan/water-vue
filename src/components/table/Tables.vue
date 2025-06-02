@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Button from '../common/Button.vue';
+import Button from '@/components/common/Button.vue';
 </script>
 
 <template>
@@ -23,7 +23,6 @@ import Button from '../common/Button.vue';
                     <li>4、 去年同期 8:00 水位</li>
                     <li>5、 今日昨日8:00 水位对比</li>
                 </ul>
-                <div class="line"></div>
                 <a href="/table/1" target="_blank"><Button>下载水位表</Button></a>
             </div>
 
@@ -43,7 +42,6 @@ import Button from '../common/Button.vue';
                     <li>2、 4小时前整点时间对应水位</li>
                     <li>3、 8小时前整点时间对应水位</li>
                 </ul>
-                <div class="line"></div>
                 <a href="/table/2" target="_blank"><Button>下载水位表</Button></a>
             </div>
 
@@ -64,7 +62,6 @@ import Button from '../common/Button.vue';
                     <li>3、 两比水位差值</li>
                     <li>4、 去年同期 8:00 水位</li>
                 </ul>
-                <div class="line"></div>
                 <a href="/table/3" target="_blank"><Button>下载水位表</Button></a>
             </div>
 
@@ -85,7 +82,6 @@ import Button from '../common/Button.vue';
                     <li>3、 两比水位差值</li>
                     <li>4、 去年同期 8:00 水位</li>
                 </ul>
-                <div class="line"></div>
                 <a href="/table/4" target="_blank"><Button>下载水位表</Button></a>
             </div>
         </div>
@@ -101,7 +97,7 @@ import Button from '../common/Button.vue';
         margin: auto;
         padding: 40px 0;
         display: flex;
-        gap: 20px;
+        justify-content: space-between;
 
         .card {
             width: 260px;

@@ -27,7 +27,7 @@
     background-color: #fff;
 
     .contain {
-        width: $content-width;
+        width: $content-width - 10px;
         margin: auto;
         overflow: hidden;
 

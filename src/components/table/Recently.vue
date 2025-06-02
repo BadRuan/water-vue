@@ -1,29 +1,40 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
-import { useRecentlyStore } from '@/store/recently.ts'
-const { recently_data, get_recently } = useRecentlyStore()
-
+import { onMounted } from 'vue';
+import { useRecentlyStore } from '@/store/recently.ts';
+const { recently_data, get_recently } = useRecentlyStore();
 onMounted(() => {
     get_recently()
-})
+});
 </script>
 
 <template>
     <div class="box">
-        <div class="grid_box">
-            <div class="block" v-for="item in recently_data" :key="item.stcd">
-                <img src="@/assets/icon/location-icon.svg">
-                <span class="s_name">{{ item.name }}</span>
-                <img src="@/assets/icon/water-icon.svg">
-                <span class="s_current">{{ item.current }}</span>
-                <span class="unit">m</span>
-                <img src="@/assets/icon/date-icon.svg">
-                <span class="r_time">更新时间：{{ item.tm }} </span>
-            </div>
-        </div>
+        <table>
+            <caption>最新水位一览</caption>
+
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>站点名称</th>
+                    <th>水位高程</th>
+                    <th>最新水位时间</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr v-for="(item, index) in recently_data" :key="item.stcd">
+                    <td>{{ index + 1 }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.current }} m</td>
+                    <td>{{ item.tm }} </td>
+                </tr>
+            </tbody>
+        </table>
+
         <div class="button">
             <a href="#" @click="get_recently()" class="update">
-                <img src="@/assets/icon/update-icon.svg">更新水位</a>
+                更新最新水位
+            </a>
         </div>
 
     </div>
@@ -31,74 +42,54 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .box {
-    .grid_box .block {
-        margin: 0 340px;
-        padding-left: 20px;
-        border-bottom: solid 1px #A6A6A6;
-        font-family: 'Xiaohe Simplify Sans VF';
-        color: rgb(94, 94, 94);
+    table {
+        margin: auto;
+        text-align: center;
+        box-shadow: 2px 2px 4px rgb(219, 219, 219);
 
-        .s_name {
-            padding: 0 12px;
-            width: 140px;
-            margin-right: 40px;
+        caption {
+            margin: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
         }
 
-        .s_current {
-            padding: 0 12px;
-            width: 60px;
+        thead {
+            background-color: #c5c5c5;
         }
 
-        .unit {
-            padding-right: 12px;
-            margin-right: 30px;
+        th,
+        td {
+            padding: 20px 60px;
         }
 
-        .r_time {
-            padding: 0 6px;
-        }
-
-        img {
-            margin-right: 8px;
-        }
-
-        span {
-            display: inline-block;
-            height: 40px;
-            line-height: 40px;
-            font-size: 20px;
-        }
-
-        &:hover {
-            background-color: #E9ECFE;
-            color: rgb(108, 108, 108);
+        tbody tr:nth-child(even) {
+            background-color: #EDF4FE;
         }
     }
 
     .button {
-        width: 160px;
-        height: 40px;
         margin: 20px auto;
-    }
+        width: 160px;
+        height: 42px;
+        line-height: 42px;
+        background-color: #F2F3F5;
+        text-align: center;
+        border-radius: 2px;
+        font-weight: bold;
 
-    a {
-        display: inline-block;
-        font-size: 16px;
-        line-height: 40px;
-        background-color: #1077FB;
-        color: #fff;
-        padding: 0 24px;
-        border-radius: 4px;
-        text-decoration: none;
 
-        img {
-            width: 16px;
-            height: 16px;
-            margin-right: 10px;
+        a {
+            text-decoration: none;
+            color: #4E5969;
         }
 
         &:hover {
-            background-color: #4696ff;
+            background-color: #E5E6EB;
+
+            a {
+                color: $pcolor;
+            }
+
         }
     }
 }
