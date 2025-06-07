@@ -106,6 +106,7 @@ import Button from '@/components/common/Button.vue';
             display: flex;
             flex-direction: column;
 
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             align-items: center;
 
             h2 {
@@ -138,6 +139,7 @@ import Button from '@/components/common/Button.vue';
 
                 li {
                     height: 24px;
+                    color: #6a6a6a;
                 }
             }
 

@@ -45,7 +45,7 @@ onMounted(() => {
     table {
         margin: auto;
         text-align: center;
-        box-shadow: 2px 2px 4px rgb(219, 219, 219);
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 
         caption {
             margin: 20px;
@@ -76,6 +76,7 @@ onMounted(() => {
         text-align: center;
         border-radius: 2px;
         font-weight: bold;
+        cursor: pointer;
 
 
         a {

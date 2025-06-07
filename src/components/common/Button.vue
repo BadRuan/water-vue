@@ -12,6 +12,7 @@ div {
     text-align: center;
     border-radius: 2px;
     width: 140px;
+    cursor: pointer;
 
     span {
         display: inline;

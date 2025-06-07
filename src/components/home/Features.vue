@@ -83,7 +83,7 @@
         padding: 0 120px;
         background-color: #fff;
         border-bottom: .5px solid rgb(213, 213, 213);
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
         .part1 {
             display: flex;
@@ -93,12 +93,12 @@
             .num {
                 margin-left: 100px;
                 color: #2A82E4;
-                font-size: 60px;
+                font-size: 52px;
                 font-weight: bold;
             }
 
             .overview {
-                font-size: 40px;
+                font-size: 36px;
             }
         }
 
@@ -113,10 +113,10 @@
             width: 500px;
 
             p {
-                text-indent: 48px;
-                font-size: 24px;
+                text-indent: 42px;
+                font-size: 20px;
                 font-family: 'Douyin Sans';
-
+                margin: 10px 0;
 
 
                 .sp1 {
