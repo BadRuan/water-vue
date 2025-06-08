@@ -3,15 +3,19 @@
         <div class="header">
             <div class="logo"><img src="@/assets/logo.svg"></div>
             <nav>
-                <li>
-                    <RouterLink to="/">首页</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/table">水位表</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/log">更新日志</RouterLink>
-                </li>
+
+                <RouterLink to="/" active-class="active">
+                    <li>首页</li>
+                </RouterLink>
+
+                <RouterLink to="/table" active-class="active">
+                    <li>水位表</li>
+                </RouterLink>
+
+                <RouterLink to="/log" active-class="active">
+                    <li>更新日志</li>
+                </RouterLink>
+
             </nav>
         </div>
     </div>
@@ -49,7 +53,7 @@ $background-color: #E5E5E5;
             display: flex;
             gap: 16px;
 
-            li {
+            a {
                 height: $header-height;
                 line-height: $header-height;
                 color: $menu-text-color;
@@ -59,21 +63,19 @@ $background-color: #E5E5E5;
                 padding: 0px 20px;
                 border-bottom: 2px solid $background-color;
                 transition: all 1s;
-
-                a {
-                    color: $menu-text-color;
-                    text-decoration: none;
-                    transition: all 1s;
-                }
+                text-decoration: none;
 
                 &:hover {
                     border-bottom: 4px solid $pcolor;
-
-                    a {
-                        color: $pcolor;
-                    }
+                    color: $pcolor;
                 }
             }
+
+            .active {
+                border-bottom: 4px solid $pcolor;
+                color: $pcolor;
+            }
+
         }
     }
 }
