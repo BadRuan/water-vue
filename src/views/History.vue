@@ -1,0 +1,156 @@
+<template>
+    <main class="w-4xl m-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-xl font-bold text-gray-800 my-8">开发历程</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto text-sm">记录鸠江水位小助手的每一次进化，见证技术迭代的力量</p>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mt-6"></div>
+        </div>
+
+        <div class="relative">
+            <!-- 时间线中心线 -->
+            <div
+                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200 via-blue-400 to-blue-200">
+            </div>
+
+            <div class="space-y-12">
+                <!-- Item 1 -->
+                <div class="relative flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0 md:text-right">
+                        <div
+                            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border border-gray-100">
+                            <div class="flex items-center justify-end mb-4">
+                                <span class="text-sm text-gray-500 mr-3">2024-04-28</span>
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                    <span class="text-2xl">🚀</span>
+                                </div>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-3">项目初步立项</h3>
+                            <p class="text-gray-600 leading-relaxed">确定核心需求，完成技术选型评估，搭建基础技术框架，规划产品发展路线图。</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10">
+                    </div>
+
+                    <div class="md:w-1/2 md:pl-12"></div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
+
+                    <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10">
+                    </div>
+
+                    <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0 order-1 md:order-2">
+                        <div
+                            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-3">
+                                    <span class="text-2xl">📊</span>
+                                </div>
+                                <span class="text-sm text-gray-500">2024-05-02</span>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-3">核心功能开发</h3>
+                            <p class="text-gray-600 leading-relaxed">完成爬虫模块开发，实现鸠江流域主要站点水位数据的稳定采集，解决数据源可靠性问题。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0 md:text-right">
+                        <div
+                            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border border-gray-100">
+                            <div class="flex items-center justify-end mb-4">
+                                <span class="text-sm text-gray-500 mr-3">2024-06-23</span>
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                    <span class="text-2xl">🎨</span>
+                                </div>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-3">架构全面升级</h3>
+                            <p class="text-gray-600 leading-relaxed">项目转型为Web应用，实现跨平台访问，优化用户体验，确保后台更新对用户透明。</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10">
+                    </div>
+
+                    <div class="md:w-1/2 md:pl-12"></div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="relative flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
+
+                    <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10">
+                    </div>
+
+                    <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0 order-1 md:order-2">
+                        <div
+                            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border border-gray-100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-3">
+                                    <span class="text-2xl">⛷</span>
+                                </div>
+                                <span class="text-sm text-gray-500">2025-05-20</span>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-3">功能体验优化</h3>
+                            <p class="text-gray-600 leading-relaxed">新增实时水位预览功能，优化数据展示逻辑，提升用户决策效率。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="relative flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0 md:text-right">
+                        <div
+                            class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border border-gray-100 ring-2 ring-blue-200">
+                            <div class="flex items-center justify-end mb-4">
+                                <span class="text-sm font-semibold text-blue-600 mr-3">最新更新</span>
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                    <span class="text-2xl">💪</span>
+                                </div>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-3">项目年度重构</h3>
+                            <p class="text-gray-600 mb-4">2026年5月12日完成全面技术升级：</p>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start justify-end">
+                                    <span class="mr-2">数据库升级至PostgreSQL，提升扩展性</span>
+                                    <span
+                                        class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs">✓</span>
+                                </li>
+                                <li class="flex items-start justify-end">
+                                    <span class="mr-2">爬虫系统重构，提升稳定性</span>
+                                    <span
+                                        class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs">✓</span>
+                                </li>
+                                <li class="flex items-start justify-end">
+                                    <span class="mr-2">后端架构优化，性能提升40%</span>
+                                    <span
+                                        class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs">✓</span>
+                                </li>
+                                <li class="flex items-start justify-end">
+                                    <span class="mr-2">UI全面升级，采用Tailwind CSS</span>
+                                    <span
+                                        class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs">✓</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10">
+                    </div>
+
+                    <div class="md:w-1/2 md:pl-12"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</template>

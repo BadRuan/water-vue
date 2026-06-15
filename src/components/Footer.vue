@@ -1,9 +1,7 @@
 <template>
-    <t-footer class="footer"> Copyright @ {{ new Date().getFullYear() }} 阮福民 版权所有  </t-footer>
+    <footer class="w-4xl m-auto my-8">
+        <div class="text-center text-gray-700 text-sm">Copyright © 2024-2026 鸠江水位小助手 | 阮福民 版权所有</div>
+        <div class="text-center text-gray-700 text-sm">邮箱：ruanfm@qq.com /
+            QQ:645187410</div>
+    </footer>
 </template>
-
-<style scoped>
-.footer {
-    text-align: center;
-}
-</style>

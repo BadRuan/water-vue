@@ -1,0 +1,298 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import Deciaml from 'decimal.js'
+
+interface Water {
+    name: string
+    today: number
+    yesterday: number
+    date: string
+}
+
+const min = (a: number, b: number) => {
+    return new Deciaml(a).minus(b).toNumber()
+}
+
+const water_list = ref<Water[]>([
+    {
+        name: '无为大堤',
+        today: 10.38,
+        yesterday: 10.38,
+        date: '2026-06-14 20:06:00'
+    },
+    {
+        name: '城北圩',
+        today: 8.61,
+        yesterday: 8.62,
+        date: '2026-06-14 20:06:00'
+    },
+    {
+        name: '江北（沈巷）长江堤',
+        today: 8.62,
+        yesterday: 8.63,
+        date: '2026-06-14 20:06:00'
+    },
+    {
+        name: '万春圈堤',
+        today: 8.81,
+        yesterday: 8.79,
+        date: '2026-06-14 20:06:00'
+    },
+    {
+        name: '裕溪口江堤',
+        today: 8.62,
+        yesterday: 8.63,
+        date: '2026-06-14 20:06:00'
+    },
+    {
+        name: '裕溪河堤',
+        today: 8.63,
+        yesterday: 8.55,
+        date: '2026-06-14 20:06:00'
+    },
+    {
+        name: '牛屯河堤',
+        today: 8.15,
+        yesterday: 8.14,
+        date: '2026-06-14 20:06:00'
+    },
+    {
+        name: '惠生连圩堤',
+        today: 10.38,
+        yesterday: 10.38,
+        date: '2026-06-14 20:06:00'
+    },
+    {
+        name: '永定大圩堤',
+        today: 10.38,
+        yesterday: 10.38,
+        date: '2026-06-14 20:06:00'
+    },
+    {
+        name: '黑沙洲、天然洲圩',
+        today: 10.38,
+        yesterday: 10.38,
+        date: '2026-06-14 20:06:00'
+    }
+])
+</script>
+
+<template>
+    <div class="h-100 bg-hero-gradient flex justify-between">
+        <div class="w-4xl m-auto h-full flex flex-row items-center">
+            <div class="flex flex-col text-center gap-4 items-center">
+                <div class="bg-[#ccdcff] text-primary-300 p-2 w-fit rounded-xl">助力鸠江区汛期水位发布</div>
+                <div class="text-3xl font-bold text-primary-400">鸠江水位发布助手</div>
+                <div class="text-gray-700">直连安徽水信息网站，无需配置，打开即用，一键获取防汛水位表。</div>
+            </div>
+            <div class="w-90 h-70">
+                <div class="relative">
+                    <img class="absolute top-8 left-8 z-10 rounded-lg" src="/table.png" alt="table_pictures">
+                    <img class="absolute top-4 left-4 z-10 rounded-lg" src="/table.png" alt="table_pictures">
+                    <img class="absolute top-0 left-0 z-20 rounded-lg" src="/table.png" alt="table_pictures">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-4xl m-auto bg-white rounded-xl flex flex-row justify-around">
+        <div class="flex flex-col p-4">
+            <div class="flex flex-row justify-center items-baseline">
+                <div class="text-primary-300 font-bold text-2xl">100</div>
+                <sub class="text-primary-300 font-bold text-sm">%</sub>
+            </div>
+            <div class="text-gray-500">数据可靠</div>
+        </div>
+        <div class="flex flex-col p-4">
+            <div class="flex flex-row justify-center items-baseline">
+                <div class="text-primary-300 font-bold text-2xl">24</div>
+                <sub class="text-primary-300 font-bold text-sm">H</sub>
+            </div>
+            <div class="text-gray-500">全时可用</div>
+        </div>
+        <div class="flex flex-col p-4">
+            <div class="flex flex-row justify-center items-baseline">
+                <div class="text-primary-300 font-bold text-2xl">1</div>
+                <sub class="text-primary-300 font-bold text-sm">S</sub>
+            </div>
+            <div class="text-gray-500">生成报表</div>
+        </div>
+        <div class="flex flex-col p-4">
+            <div class="flex flex-row justify-center items-baseline">
+                <div class="text-primary-300 font-bold text-2xl">99.9</div>
+                <sub class="text-primary-300 font-bold text-sm">%</sub>
+            </div>
+            <div class="text-gray-500">服务可用率</div>
+        </div>
+    </div>
+
+    <div class="w-4xl m-auto">
+        <div class="m-4 text-center text-gray-900 text-2xl font-bold">为何用鸠江水位小助手？</div>
+        <div class="m-2 text-center text-gray-600">稳定可靠的平台，已经过3年汛期实际使用验证</div>
+        <div class="my-4 flex flex-row justify-around">
+            <div class="bg-white w-52 h-46 rounded-2xl p-2">
+                <div class="flex flex-row m-4">
+                    <img src="/icon/icon-1.svg" alt="easy">
+                    <span class="mx-2 text-gray-800 text-xl">简单</span>
+                </div>
+                <div class="m-2 text-gray-600 text-sm">无需配置，最新水位打开即得，汛期常用水位三线水位表直接单击即可获得，无需手动填写目标水位。</div>
+            </div>
+            <div class="bg-white w-52 h-46 rounded-2xl p-2">
+                <div class="flex flex-row m-4">
+                    <img src="/icon/icon-2.svg" alt="easy">
+                    <span class="mx-2 text-gray-800 text-xl">准确</span>
+                </div>
+                <div class="m-2 text-gray-600 text-sm">数据直连安徽水信息网站，源头抓取，保证数据真实可靠。</div>
+            </div>
+
+            <div class="bg-white w-52 h-46 rounded-2xl p-2">
+                <div class="flex flex-row m-4">
+                    <img src="/icon/icon-3.svg" alt="easy">
+                    <span class="mx-2 text-gray-800 text-xl">高效</span>
+                </div>
+                <div class="m-2 text-gray-600 text-sm">点击立即出表，自动填写水位数据，替代传统人工录入，大幅降低操作差错。</div>
+            </div>
+            <div class="bg-white w-52 h-46 rounded-2xl p-2">
+                <div class="flex flex-row m-4">
+                    <img src="/icon/icon-4.svg" alt="easy">
+                    <span class="mx-2 text-gray-800 text-xl">便捷</span>
+                </div>
+                <div class="m-2 text-gray-600 text-sm">基于Web架构，跨平台使用，手机、电脑均无设备局限性。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-4xl m-auto">
+        <div class="m-4 text-center text-gray-900 text-2xl font-bold">鸠江测站最新水位数据一览</div>
+        <div class="m-2 text-center text-gray-600">即时查看鸠江区水文测站最新水位数据</div>
+        <table class="text-center overflow-x-auto bg-white rounded-xl min-w-full">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="text-gray-600 font-medium py-2">序号</th>
+                    <th class="text-gray-600 font-medium py-2">站名</th>
+                    <th class="text-gray-600 font-medium py-2">更新时间</th>
+                    <th class="text-gray-600 font-medium py-2">当前水位</th>
+                    <th class="text-gray-600 font-medium py-2">昨日同期水位</th>
+                    <th class="text-gray-600 font-medium py-2">较昨日同期水位+涨-落</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+
+
+                <tr v-for="(water, index) in water_list" :key="index" class="hover:bg-blue-50 ">
+                    <td class="text-gray-600 py-4">{{ index + 1 }}</td>
+                    <td class="text-gray-600 py-4">📍{{ water.name }}</td>
+                    <td class="text-gray-600 py-4">{{ water.date }}</td>
+                    <td class="text-gray-600 py-4 font-bold">{{ water.today }} m</td>
+                    <td class="text-gray-600 py-4">{{ water.yesterday }} m</td>
+                    <td class="text-gray-600 py-4">
+
+                        <div v-if="min(water.today, water.yesterday) == 0"
+                            class="inline-flex text-gray-600 px-6 py-1 bg-gray-300 rounded-full text-sm font-medium">→
+                            持平
+                        </div>
+
+                        <div v-else-if="min(water.today, water.yesterday) > 0"
+                            class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-700">
+                            ↑ +{{ min(water.today, water.yesterday) }}m</div>
+
+                        <div v-else="min(water.today, water.yesterday) < 0"
+                            class="inline-flex text-green-700 px-3 py-1 rounded-full text-sm font-medium bg-green-100 ">
+                            ↓ -{{ min(water.yesterday, water.today) }}m</div>
+
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="w-4xl m-auto">
+        <div class="m-4 text-center text-gray-900 text-2xl font-bold">鸠江区三线水位测站记录情况登记表</div>
+        <div class="m-2 text-center text-gray-600">下方点击 一键下载成品表格</div>
+
+        <div class="flex flex-row justify-around gap-2">
+            <div class="bg-white p-4 rounded-xl flex flex-col">
+                <div class="flex flex-row items-center">
+                    <img src="/icon/table.svg" alt="table-icon">
+                    <div class="mx-2 text-sm">鸠江区三线水位表</div>
+                </div>
+                <div class="my-4 bg-gray-500 h-[0.5px]"></div>
+                <ul class="text-gray-600 text-sm ">
+                    <li>1、 今日 8:00 水位</li>
+                    <li>2、 昨日 8:00 水位</li>
+                    <li>3、 上周同期 8:00 水位</li>
+                    <li>4、 去年同期 8:00 水位</li>
+                    <li>5、 今日昨日8:00 水位对比</li>
+                </ul>
+                <div class="my-4 bg-gray-500 h-[0.5px]"></div>
+                <a class="m-auto flex flex-row items-center bg-gray-200 hover:bg-gray-100 px-2 py-1 rounded-xl"
+                    href="/table/1" target="_blank">
+                    <img src="/icon/down.svg" alt="download">
+                    <div class="text-primary-300 mx-2 text-sm">获取表格</div>
+                </a>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl flex flex-col">
+                <div class="flex flex-row items-center">
+                    <img src="/icon/table.svg" alt="table-icon">
+                    <div class="mx-2 text-sm">鸠江区三线水位表</div>
+                </div>
+                <div class="my-4 bg-gray-500 h-[0.5px]"></div>
+                <ul class="text-gray-600 text-sm ">
+                    <li>1、 当前整点水位</li>
+                    <li>2、 前 4 小时水位</li>
+                    <li>3、 前 8 小时水位</li>
+                </ul>
+                <div class="my-4 bg-gray-500 h-[0.5px]"></div>
+                <a class="m-auto flex flex-row items-center bg-gray-200 hover:bg-gray-100 px-2 py-1 rounded-xl"
+                    href="/table/2" target="_blank">
+                    <img src="/icon/down.svg" alt="download">
+                    <div class="text-primary-300 mx-2 text-sm">获取表格</div>
+                </a>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl flex flex-col">
+                <div class="flex flex-row items-center">
+                    <img src="/icon/table.svg" alt="table-icon">
+                    <div class="mx-2 text-sm">鸠江区三线水位表</div>
+                </div>
+                <div class="my-4 bg-gray-500 h-[0.5px]"></div>
+                <ul class="text-gray-600 text-sm ">
+                    <li>1、 今日 8:00 水位</li>
+                    <li>2、 三日前 8:00 水位</li>
+                    <li>3、 两比涨落</li>
+                    <li>4、 去年同期 8:00 水位</li>
+                </ul>
+                <div class="my-4 bg-gray-500 h-[0.5px]"></div>
+                <a class="m-auto flex flex-row items-center bg-gray-200 hover:bg-gray-100 px-2 py-1 rounded-xl"
+                    href="/table/3" target="_blank">
+                    <img src="/icon/down.svg" alt="download">
+                    <div class="text-primary-300 mx-2 text-sm">获取表格</div>
+                </a>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl flex flex-col">
+                <div class="flex flex-row items-center">
+                    <img src="/icon/table.svg" alt="table-icon">
+                    <div class="mx-2 text-sm">鸠江区三线水位表</div>
+                </div>
+                <div class="my-4 bg-gray-500 h-[0.5px]"></div>
+                <ul class="text-gray-600 text-sm ">
+                    <li>1、 今日 8:00 水位</li>
+                    <li>2、 昨日 8:00 水位</li>
+                    <li>3、 两比涨落</li>
+                    <li>4、 去年同期 8:00 水位</li>
+                </ul>
+                <div class="my-4 bg-gray-500 h-[0.5px]"></div>
+                <a class="m-auto flex flex-row items-center bg-gray-200 hover:bg-gray-100 px-2 py-1 rounded-xl"
+                    href="/table/4" target="_blank">
+                    <img src="/icon/down.svg" alt="download">
+                    <div class="text-primary-300 mx-2 text-sm">获取表格</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>

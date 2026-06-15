@@ -7,10 +7,5 @@
     {
       "path": "./tsconfig.app.json"
     }
-  ],
-  "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist"
-  },
-  "includes": "node_modules/tdesign-vue-next/global.d.ts"
+  ]
 }

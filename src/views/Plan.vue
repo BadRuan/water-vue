@@ -1,0 +1,188 @@
+<template>
+    <main class="w-4xl m-auto">
+        <!-- 1. 标题区域：独立出来，不需要背景色和圆角，或者单独设置 -->
+        <div class="text-center">
+            <h1 class="text-2xl font-bold text-gray-800 my-6">未来计划</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto text-sm">清晰的路线图，透明的开发进程，持续为防汛创造价值</p>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mt-6"></div>
+        </div>
+
+        <!-- 2. 阶段内容区域：用一个干净的容器包裹 -->
+        <div class="max-w-5xl mx-auto space-y-12">
+            <!-- 阶段 1 -->
+            <div class="relative">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4 shrink-0">
+                        <span class="text-2xl">📡</span>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-bold text-gray-800">第一阶段：数据采集与展示</h3>
+                            <span
+                                class="px-4 py-1.5 bg-green-100 text-green-800 rounded-full text-sm font-semibold">已完成</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">对接官方数据源，实现水位信息的自动化采集与可视化展示。</p>
+                    </div>
+                </div>
+
+                <!-- 阶段卡片 -->
+                <div class="ml-16 bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-600">完成进度</span>
+                            <span class="text-sm font-bold text-green-600">100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                            <!-- 修正：给进度条加上具体的背景色类，而不是依赖 style -->
+                            <div class=" bg-green-400 to-green-600 h-3 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div class="flex items-center p-3 bg-green-50 rounded-lg">
+                            <span
+                                class="w-8 h-8 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mr-3">✓</span>
+                            <span class="text-gray-700">数据源对接</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-green-50 rounded-lg">
+                            <span
+                                class="w-8 h-8 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mr-3">✓</span>
+                            <span class="text-gray-700">爬虫开发</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-green-50 rounded-lg">
+                            <span
+                                class="w-8 h-8 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mr-3">✓</span>
+                            <span class="text-gray-700">数据展示</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 阶段 2 -->
+            <div class="relative">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4 shrink-0">
+                        <span class="text-2xl">📊</span>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-bold text-gray-800">第二阶段：智能报表系统</h3>
+                            <span
+                                class="px-4 py-1.5 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold">已完成</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">开发多种场景的水位报表模板，实现一键生成与导出功能。</p>
+                    </div>
+                </div>
+
+                <div class="ml-16 bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-600">完成进度</span>
+                            <span class="text-sm font-bold text-blue-600">100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                            <div class=" bg-blue-400 to-blue-600 h-3 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div class="flex items-center p-3 bg-blue-50 rounded-lg">
+                            <span
+                                class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3">✓</span>
+                            <span class="text-gray-700">日报模板</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-blue-50 rounded-lg">
+                            <span
+                                class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3">✓</span>
+                            <span class="text-gray-700">时报模板</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-blue-50 rounded-lg">
+                            <span
+                                class="w-8 h-8 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mr-3">✓</span>
+                            <span class="text-gray-700">对比模板</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 阶段 3 -->
+            <div class="relative">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mr-4 shrink-0">
+                        <span class="text-2xl">🚨</span>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-bold text-gray-800">第三阶段：智能预警系统</h3>
+                            <span
+                                class="px-4 py-1.5 bg-gray-100 text-gray-800 rounded-full text-sm font-semibold">进行中</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">构建水位监测预警机制，实现异常数据自动通知功能。</p>
+                    </div>
+                </div>
+
+                <div class="ml-16 bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-600">完成进度</span>
+                            <span class="text-sm font-bold text-gray-600">00%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                            <div class=" from-gray-400 to-gray-600 h-3 rounded-full" style="width: 15%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-semibold text-gray-800 mb-4">即将推出的功能：</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div
+                                class="flex items-start p-4 border border-gray-200 rounded-xl hover:border-blue-300 transition">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3 mt-1">
+                                    <span>🔔</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">阈值预警</h5>
+                                    <p class="text-sm text-gray-600 mt-1">自定义水位阈值，超限自动告警</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start p-4 border border-gray-200 rounded-xl hover:border-blue-300 transition">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3 mt-1">
+                                    <span>📧</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">多渠道通知</h5>
+                                    <p class="text-sm text-gray-600 mt-1">邮件、短信、App推送多种方式</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start p-4 border border-gray-200 rounded-xl hover:border-blue-300 transition">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3 mt-1">
+                                    <span>📈</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">趋势预测</h5>
+                                    <p class="text-sm text-gray-600 mt-1">基于历史数据的智能趋势分析</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="flex items-start p-4 border border-gray-200 rounded-xl hover:border-blue-300 transition">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-3 mt-1">
+                                    <span>🗺️</span>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium text-gray-800">可视化地图</h5>
+                                    <p class="text-sm text-gray-600 mt-1">GIS地图展示各站点水位状态</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</template>

@@ -1,10 +1,36 @@
 <template>
-    <t-header>
-        <t-head-menu theme="dark" default-value="home" height="150px">
-            <t-menu-item to="/" value="home"> 首页 </t-menu-item>
-            <t-menu-item to="/story" value="story"> 开发历程 </t-menu-item>
-            <t-menu-item to="/next" value="next"> 下步计划 </t-menu-item>
-            <t-menu-item value="overview" :disabled="true"> 数据总览 </t-menu-item>
-        </t-head-menu>
-    </t-header>
+    <header class="bg-white h-14">
+        <div class="w-4xl h-full mx-auto flex items-center justify-between">
+            <div class="md:flex">
+                <div class="w-full">
+                    <img src="/logo.svg" alt="logo" />
+                </div>
+            </div>
+            <nav class="flex gap-4 items-center">
+                <RouterLink class="w-20 group" :to="{ name: 'Home' }">
+                    <div
+                        class="text-gray-900 text-center text-base group-hover:text-primary-300 group-active:text-primary-300">
+                        网站首页
+                    </div>
+                    <div
+                        class="text-gray-400 text-center text-xs group-hover:text-primary-400  group-active:text-primary-400">
+                        Home Page</div>
+                </RouterLink>
+                <RouterLink class="w-20 group" :to="{ name: 'Plan' }">
+                    <div
+                        class="text-gray-900 text-center text-base group-hover:text-primary-300 group-active:text-primary-300">
+                        未来计划</div>
+                    <div class="text-gray-400 text-center text-xs group-hover:text-primary-400 group-active:text-primary-400"
+                        group-active:text-primary-400>Future Palns</div>
+                </RouterLink>
+                <RouterLink class="w-20 group" :to="{ name: 'History' }">
+                    <div class="text-gray-900 text-center text-base group-hover:text-primary-300 group-active:text-primary-300"
+                        group-active:text-primary-300>开发历程</div>
+                    <div
+                        class="text-gray-400 text-center text-xs group-hover:text-primary-400 group-active:text-primary-400">
+                        Code History</div>
+                </RouterLink>
+            </nav>
+        </div>
+    </header>
 </template>

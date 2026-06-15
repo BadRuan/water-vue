@@ -1,28 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '@/pages/Home.vue'
-import StoryPage from '@/pages/Story.vue'
-import NextPage from '@/pages/Next.vue'
-
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomePage
+      name: 'Home',
+      component: () => import("@/views/Home.vue"),
     },
     {
-      path: '/story',
-      name: 'story',
-      component: StoryPage
+      path: '/history',
+      name: 'History',
+      component: () => import("@/views/History.vue")
     },
     {
-      path: '/next',
-      name: 'next',
-      component: NextPage
+      path: '/plan',
+      name: 'Plan',
+      component: () => import("@/views/Plan.vue")
     }
-  ]
+  ],
+  linkActiveClass: 'group-active',
 })
 
 export default router
