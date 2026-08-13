@@ -1,36 +1,30 @@
 <template>
-    <header class="bg-white h-14">
-        <div class="w-4xl h-full mx-auto flex items-center justify-between">
+    <header class="bg-white h-16">
+        <div class="w-6xl h-full mx-auto flex items-center justify-between px-4">
             <div class="md:flex">
-                <div class="w-full">
-                    <img src="/logo.svg" alt="logo" />
+                <div class="w-full flex flex-row items-center">
+                    <img src="/logo.svg" class="mx-4" alt="logo" />
+                    <img src="/logo_text.svg" class="w-full h-2/3" alot="logo-text" />
                 </div>
             </div>
-            <nav class="flex gap-4 items-center">
-                <RouterLink class="w-20 group" :to="{ name: 'Home' }">
-                    <div
-                        class="text-gray-900 text-center text-base group-hover:text-primary-300 group-active:text-primary-300">
-                        网站首页
-                    </div>
-                    <div
-                        class="text-gray-400 text-center text-xs group-hover:text-primary-400  group-active:text-primary-400">
-                        Home Page</div>
-                </RouterLink>
-                <RouterLink class="w-20 group" :to="{ name: 'Plan' }">
-                    <div
-                        class="text-gray-900 text-center text-base group-hover:text-primary-300 group-active:text-primary-300">
-                        未来计划</div>
-                    <div class="text-gray-400 text-center text-xs group-hover:text-primary-400 group-active:text-primary-400"
-                        group-active:text-primary-400>Future Palns</div>
-                </RouterLink>
-                <RouterLink class="w-20 group" :to="{ name: 'History' }">
-                    <div class="text-gray-900 text-center text-base group-hover:text-primary-300 group-active:text-primary-300"
-                        group-active:text-primary-300>开发历程</div>
-                    <div
-                        class="text-gray-400 text-center text-xs group-hover:text-primary-400 group-active:text-primary-400">
-                        Code History</div>
-                </RouterLink>
-            </nav>
+
+            <ul class="flex flex-row gap-8 items-center justify-center font-medium">
+                <li class="flex flex-col items-center border-b border-gray-100">
+                    <div class="text-gray-800">网站首页</div>
+                    <div class="text-gray-400 text-sm hover:bg-gray-50">Home</div>
+                </li>
+
+                <li class="flex flex-col items-center border-b border-gray-100">
+                    <div class="text-gray-800">开发历程</div>
+                    <div class="text-gray-400 text-sm">History</div>
+                </li>
+
+                <li class="flex flex-col items-center border-b border-gray-100">
+                    <div class="text-gray-800">下步计划</div>
+                    <div class="text-gray-400 text-sm">Plan</div>
+                </li>
+            </ul>
+
         </div>
     </header>
 </template>

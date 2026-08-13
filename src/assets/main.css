@@ -1,63 +1,15 @@
+@font-face {
+    font-family: 'GoogleSansCode';
+    src: url('/fonts/GoogleSansCode.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
 
 @theme {
-    --color-primary-100: #CCDCFF;
-    --color-primary-200: #7CA4FF;
-    --color-primary-300: #165DFF;
-    --color-primary-400: #0035AF;
-    --color-primary-500: #001649;
-    --color-background: #F5F7FA;
-    --font-sans: "Inter", "sans-serif";
-}
-
-.bg-hero-gradient {
-    background: linear-gradient(to bottom, rgba(230, 240, 255, 100%), rgba(245, 247, 250, 100%));
-}
-
-/* Scroll-triggered fade-up animation */
-.fade-up {
-    opacity: 0;
-    transform: translateY(1.5rem);
-    transition: opacity 0.55s ease-out, transform 0.55s ease-out;
-}
-
-.fade-up.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Nav item hover underline */
-.nav-item {
-    position: relative;
-}
-
-.nav-item::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-primary-300);
-    transform: scaleX(0);
-    transition: transform 0.2s ease-out;
-}
-
-.nav-item:hover::after {
-    transform: scaleX(1);
-}
-
-/* Active nav item permanent underline */
-.nav-item-active {
-    position: relative;
-}
-
-.nav-item-active::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-primary-300);
+    --font-sans: "GoogleSansCode", "Inter", "PingFang SC", "Microsoft YaHei", ui-sans-serif;
+    --color-primay: #c7000b;
 }

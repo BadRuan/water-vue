@@ -4,9 +4,10 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
-  <div class="bg-background">
+  <div class="bg-[#F5F6Fa]">
     <Header />
-    <RouterView />
+    <router-view>
+    </router-view>
     <Footer />
   </div>
 </template>
